@@ -20,7 +20,7 @@ void pulsePins(const byte pins[], byte count)
 
 void setup()
 {
-  pinMode(INPUT_PIN, INPUT);
+  pinMode(INPUT_PIN, INPUT_PULLUP);
 
   pinMode(A2, OUTPUT);
   pinMode(A3, OUTPUT);
