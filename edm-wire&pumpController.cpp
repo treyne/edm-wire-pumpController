@@ -39,6 +39,7 @@ void setup()
 
 void loop()
 {
+  if (MODE){
   bool currentState = digitalRead(INPUT_PIN);
 
   // Переход LOW -> HIGH
@@ -54,4 +55,5 @@ void loop()
   }
 
   lastState = currentState;
+}
 }
