@@ -1,4 +1,5 @@
 const byte INPUT_PIN = A1;
+const byte MODE = A6;
 
 const byte HIGH_PINS[] = {A2, A3};
 const byte LOW_PINS[]  = {A4, A5};
@@ -21,6 +22,7 @@ void pulsePins(const byte pins[], byte count)
 void setup()
 {
   pinMode(INPUT_PIN, INPUT_PULLUP);
+  pinMode(MODE, INPUT_PULLUP);
 
   pinMode(A2, OUTPUT);
   pinMode(A3, OUTPUT);
